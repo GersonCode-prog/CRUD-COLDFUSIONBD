@@ -1,0 +1,160 @@
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Contenedor superior */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.input-search {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+.btn-agregar,
+.btn-pdf,
+.btn-editar,
+.btn-eliminar {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-pdf {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.btn-editar {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-agregar:hover,
+.btn-pdf:hover,
+.btn-editar:hover,
+.btn-eliminar:hover {
+  opacity: 0.8;
+}
+/* Modal */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: right;
+}
+
+.btn-cancelar {
+  background-color: #2196f3;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-guardar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-eliminar {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-agregar {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-agregar:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-search {
+    width: 100%;
+    max-width: none;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-agregar,
+  .btn-pdf,
+  .btn-editar,
+  .btn-eliminar {
+    flex-grow: 1;
+    max-width: none;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
